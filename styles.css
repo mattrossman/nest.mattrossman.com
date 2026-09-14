@@ -1,0 +1,30 @@
+:root {
+  color-scheme: dark;
+  font-family: system-ui, sans-serif;
+  color: #e8edf5;
+  background: #101722;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 4rem 1.25rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.wrap { display: grid; gap: 2rem; }
+h1, h2 { margin: 0; line-height: 1.2; }
+h1 { font-size: clamp(2rem, 7vw, 3.5rem); }
+h2 { margin-bottom: 1rem; font-size: 1.25rem; }
+p { margin: 0 0 1rem; }
+p:last-child { margin-bottom: 0; }
+.updated { color: #aab5c5; font-size: .9rem; }
+a { color: #8bd5ff; font-weight: 600; }
+a:focus-visible { outline: 3px solid #f5c451; outline-offset: 3px; }
+
+@media (max-width: 600px) {
+  body { padding-top: 2.5rem; }
+}
